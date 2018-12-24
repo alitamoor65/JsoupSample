@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorThemeDark</color>
+    <color name="colorPrimaryDark">@color/colorThemeLight</color>
+    <color name="colorAccent">@color/colorThemeDark</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDividerGray">#bdbdbd</color>
+    <color name="colorAbsoluteGray">#f4f4f4</color>
+    <color name="colorAbsoluteDark">#415087</color>
+    <color name="colorDividerWhite">#ffffff</color>
+
+
+    <color name="colorThemeDark">#2A3663</color>
+    <color name="colorThemeLight">#455387</color>
+    <color name="colorThemeAccent">#91BF52</color>
+
+</resources>

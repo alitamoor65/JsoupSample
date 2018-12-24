@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/matchDatetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="LIVE"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/matchOverviewtextView" />
+
+    <TextView
+        android:id="@+id/matchOverviewtextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/top_overview_bg_dark"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="Group B, Asian Cricket Council Emerging Teams Cup at Karachi, Dec 6 2018"
+        android:textColor="@color/colorWhite"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/matchHomeAbrtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NZ"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/matchHomeLogoID"
+            app:layout_constraintStart_toStartOf="@+id/matchHomeLogoID"
+            app:layout_constraintTop_toBottomOf="@+id/matchHomeLogoID" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/matchHomeScreetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="right"
+            android:text="123345"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/matchHomeLogoID"
+            app:layout_constraintTop_toTopOf="@+id/matchHomeLogoID" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/matchAwayAbrtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAK"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/matchAwayLogoId"
+            app:layout_constraintStart_toStartOf="@+id/matchAwayLogoId"
+            app:layout_constraintTop_toBottomOf="@+id/matchAwayLogoId" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:gravity="left"
+            android:id="@+id/matchAwayScoretextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="348 | 274/4*"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/matchAwayLogoId"
+            app:layout_constraintTop_toTopOf="@+id/matchAwayLogoId" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/matchLongDescriptiontextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bottom_summary_bg_dark"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Group B, Asian Cricket Council Emerging Teams Cup at Karachi, Dec 6 2018"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/matchHomeAbrtextView" />
+
+        <TextView
+            android:textSize="10dp"
+            android:id="@+id/textView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/vs_circle_bg_dark"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="V/S"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/matchDatetextView"
+            app:layout_constraintStart_toStartOf="@+id/matchDatetextView"
+            app:layout_constraintTop_toBottomOf="@+id/matchDatetextView" />
+
+        <ImageView
+            android:padding="2dp"
+            android:background="@drawable/flage_circle_bg_dark"
+            android:scaleType="fitCenter"
+            android:id="@+id/matchAwayLogoId"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/matchDatetextView"
+            app:srcCompat="@drawable/flag_one" />
+
+        <TextView
+            android:id="@+id/matchAwayOversTextViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(34.1/50 overs)"
+            android:textSize="8dp"
+            android:textColor="@color/colorDividerGray"
+            app:layout_constraintBottom_toBottomOf="@+id/matchAwayLogoId"
+            app:layout_constraintStart_toStartOf="@+id/matchAwayScoretextView"
+            app:layout_constraintTop_toBottomOf="@+id/matchAwayScoretextView" />
+
+        <ImageView
+            android:padding="2dp"
+            android:background="@drawable/flage_circle_bg_dark"
+            android:scaleType="fitCenter"
+            android:id="@+id/matchHomeLogoID"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/matchDatetextView"
+            app:srcCompat="@drawable/flag_two" />
+
+        <TextView
+            android:textColor="@color/colorDividerGray"
+            android:id="@+id/matchHomeOverstextVieID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(34.1/50 overs)"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/matchHomeLogoID"
+            app:layout_constraintEnd_toEndOf="@+id/matchHomeScreetextView"
+            app:layout_constraintTop_toBottomOf="@+id/matchHomeScreetextView" />
+
+    </android.support.constraint.ConstraintLayout>
